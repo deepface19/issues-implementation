@@ -1,7 +1,7 @@
 # Contract Issues Implementation
 
 ## libraries/StableMath.sol
-```sol
+```solidity
 pragma solidity ^0.6.12;
 
 import "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol";
