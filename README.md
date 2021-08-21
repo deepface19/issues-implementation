@@ -8,7 +8,7 @@ import "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol";
 
 ```
 - it's code incorrect, you must change code to like this 
-```sol
+```solidity
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.5;
