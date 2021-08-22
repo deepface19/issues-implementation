@@ -93,3 +93,21 @@ library UniswapV2OracleLibrary {
     }
 }
 ```
+## libraries/InitializableERC20Detail.sol
+- fix pragma solidity in this file upgrade to up, because Source file requires different compiler version builds the released version pragma solidity ^0.8.0;
+- so use pragma solidity 0.8.5 in this file
+- add SPDX Licensi
+```solidity
+pragma solidity ^0.6.12;
+
+import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
+```
+## libraries/StableMath.sol
+- fix error in code line = 33,35 ( Explicit type conversion not allowed from "int8" to "uint256")
+```solidity
+ if (adjustment > 0) {
+            x = x.mul(10**uint256(adjustment));
+        } else if (adjustment < 0) {
+            x = x.div(10**uint256(adjustment * -1));
+        }
+```
