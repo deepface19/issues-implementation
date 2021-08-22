@@ -20,3 +20,14 @@ import "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol";
 ```
 
 
+- and This code is a error you must fixxed
+- Explicit type conversion not allowed from "int8" to "uint256".
+```solidity
+  if (adjustment > 0) {
+            x = x.mul(10**uint256(adjustment));
+        } else if (adjustment < 0) {
+            x = x.div(10**uint256(adjustment * -1));
+        }
+        return x;
+    }
+```
