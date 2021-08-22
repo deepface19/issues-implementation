@@ -1,7 +1,7 @@
 # Contract Issues Implementation
 ## token/USDs.sol
-- not found source file
-- fix source file error safeMathUpgradeable.sol
+- not found source file  safeMathUpgradeable.sol
+- fix to spesific
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
@@ -19,8 +19,8 @@ import "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol";
 ```
 ## oracle/Oracle.sol
-- not found source files
-- check and spesific SafeMathUpgradeable.sol
+- not found source file SafeMathUpgradeable.sol
+- check and fix to spesific
 ```solidity
 // SPDX-License-Identifier: MIT
 
@@ -117,4 +117,33 @@ library UniswapV2OracleLibrary {
 pragma solidity ^0.6.12;
 
 import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
+```
+## startegies/InitializableAbstractStrategy.sol
+- not found source file SafeERC20Upgradeable.sol";
+- check and fix it spesific
+```solidity
+pragma solidity ^0.6.12;
+
+
+import "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol";
+
+import "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
+```
+## vault/VaultStorage.sol
+- not found source file Initializable.sol
+- check and fix it to spesific
+```solidity
+pragma solidity ^0.6.12;
+
+import "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol";
+import { USDs } from "../token/USDs.sol";
+import { BancorFormula } from "../libraries/BancorFormula.sol";
+```
+## vault/VaultCore.sol
+-  not found source file SafeERC20Upgradeable.sol
+-  check and fix it to spesific 
+```
+import "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol";
 ```
